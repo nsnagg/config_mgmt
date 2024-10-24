@@ -8,9 +8,6 @@ from device_inventory import DEVICE_INVENTORY
 from rich import print as r_print
 import sys
 
-print(len(sys.argv), sys.argv)
-exit()
-
 
 def run_inventory_list(device_inventory):
     for each_device in device_inventory:
