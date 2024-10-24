@@ -1,0 +1,7 @@
+enable
+configure
+interface lo0
+ip address 11.11.11.11/32
+exit
+
+show runn

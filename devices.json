@@ -1,0 +1,23 @@
+[
+    {
+      "hostname": "arista01",
+      "host": "10.10.10.2",
+      "device_type": "arista_eos"
+    },
+    {
+      "hostname": "arista02",
+      "host": "10.10.10.3",
+      "device_type": "arista_eos"
+    },
+    {
+      "hostname": "arista03",
+      "host": "10.10.10.4",
+      "device_type": "arista_eos"
+    },
+    {
+      "hostname": "arista05",
+      "host": "10.10.10.5",
+      "device_type": "arista_eos"
+    }
+]
+
