@@ -10,6 +10,7 @@ hostname arista01
 snmp-server engineID local f5717f08002796cd1300
 snmp-server group python v3 priv
 snmp-server user mihai python v3 localized f5717f08002796cd1300 auth sha dc5f31679f070a941cc105f738574d5904a439a5 priv aes 7ce5fb48ce524f70cb2d8029b97317b459075a5b
+snmp-server user snmp_user python v3 localized f5717f08002796cd1300 auth sha dc5f31679f070a941cc105f738574d5904a439a5 priv aes 7ce5fb48ce524f70cb2d8029b97317b459075a5b
 !
 spanning-tree mode mstp
 !

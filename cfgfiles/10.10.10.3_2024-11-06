@@ -1,0 +1,29 @@
+! Command: show running-config
+! device: arista02 (vEOS, EOS-4.20.15M)
+!
+! boot system flash:/vEOS-lab.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+hostname arista02
+!
+snmp-server engineID local f5717f080027d9538900
+snmp-server group python v3 priv
+snmp-server user mihai python v3 localized f5717f080027d9538900 auth sha c179329d1bf19f33f6647380c516274ea3efdedd priv aes 6b840e6d1753b3c8de91811adc73d3b95b17a2dc
+snmp-server enable traps
+!
+spanning-tree mode mstp
+!
+no aaa root
+!
+username admin role network-admin secret sha512 $6$W6.BKN7lqGdW830h$kA3FAjQn9DivjX1cn/UPfCbW7tvjcoyQkqC0RQi8s2TFRSlg/nHud8h3SV/lJqpdi3CjRsNe1Eb/SgM65sr650
+!
+interface Loopback0
+   ip address 2.2.2.2/24
+!
+interface Management1
+   ip address 10.10.10.3/24
+!
+no ip routing
+!
+end

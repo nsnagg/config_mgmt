@@ -16,5 +16,5 @@ def get_credentials():
 
 
 if __name__ == "__main__":
-    print("my_tools.py is running directly...")
+    print("get_creds.py is running directly...")
     get_credentials()
