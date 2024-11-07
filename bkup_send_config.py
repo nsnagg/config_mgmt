@@ -1,4 +1,4 @@
-# file: bkup_send_diff_config.py
+# file: bkup_send_config.py
 # This script will take a device configuration snapshot and put it in a file.
 # This script will also create a diff file and send it to a configured email address.
 import difflib
@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from netmiko import ConnectHandler
 from device_inventory import DEVICE_INVENTORY
-from my_tools import get_creds as creds
+from nos_tools import get_creds as creds
 
 
 def run_inventory_list(device_inventory):

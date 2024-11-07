@@ -1,7 +1,7 @@
 #!/user/bin/env python
 from __future__ import absolute_import, division, print_function
 import json
-import my_tools
+import nos_tools
 import netmiko
 from netmiko.exceptions import NetmikoTimeoutException
 from netmiko.exceptions import NetmikoAuthenticationException
@@ -28,11 +28,11 @@ with open(sys.argv[2]) as dev_file:
     dev_file.read()
 '''
 
-# username, password = my_tools.get_credentials()
+# username, password = nos_tools.get_credentials()
 username, password = 'admin', 'python'
 results = {'Successful': [], "Failed": []}
 
-# Open command file
+# Open the command.txt file
 with open('commands.txt') as cmd_file:
     commands = cmd_file.readlines()
 print(commands)
